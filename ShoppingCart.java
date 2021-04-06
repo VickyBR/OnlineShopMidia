@@ -44,9 +44,14 @@ return result;
 
       public double calculatePricePerProduct() throws ArithmeticException{
         double result ;
-        try { result = productSum/quantityProduts; }
-        catch (ArithmeticException ex ){ throw  new ArithmeticException( " Shopping cart is empty"); }
-        return result; }
+        try {
+            result = productSum/quantityProduts;
+        }
+        catch (ArithmeticException ex ){ 
+            throw  new ArithmeticException( " Shopping cart is empty");
+        }
+        return result;
+      }
 
 
 
