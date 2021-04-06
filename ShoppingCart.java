@@ -7,25 +7,37 @@ public class ShoppingCart extends Customer {
 
 
 
-    public float getProductSum(){ return productSum;}
-    public void setProductSum(float productSum){this.productSum=productSum;}
+    public float getProductSum(){ 
+        return productSum;
+    }
+    public void setProductSum(float productSum){
+        this.productSum=productSum;
+    }
+    
+    
 
-    public boolean getisCostumerPremium(){return isCostumerPremium;}
-    public void setCostumerPremium( boolean isCostumerPremium){this.isCostumerPremium=isCostumerPremium;}
-
-
-    public float calculateSum( Customer customer){
+    public boolean getisCostumerPremium(){
+        return isCostumerPremium;
+    }
+    public void setCostumerPremium( boolean isCostumerPremium){
+        this.isCostumerPremium=isCostumerPremium;
+    }
+    
+    
+ public float calculateSum( Customer customer){
         float result = productSum;
-
-        if (customer.isPremiumCustomer()==true){
+          if (customer.isPremiumCustomer()==true){
             if (quantityProduts>3){
                 result = productSum*0.88f; }
-            else{
-    result= productSum*0.9f; } }
-
-else { result = productSum*1f;}
-
-return result;}
+               else{
+    result= productSum*0.9f; 
+            } 
+        }
+               else { 
+    result = productSum*1f;
+}
+return result;
+    }
 
 
 
