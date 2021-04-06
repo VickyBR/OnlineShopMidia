@@ -81,12 +81,10 @@ public class Customer {
         if (isCustomerPremium==true){
             System.out.println(" The client is a Premium Customer"); 
         }
-
-        else {
+ else {
             System.out.println(" The client is not a Premium Customer");
         }
-
-        return result; }
+return result; }
 
 
 
